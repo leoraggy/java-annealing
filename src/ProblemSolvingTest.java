@@ -35,6 +35,7 @@ public class ProblemSolvingTest {
 
     assertFalse(actual);
   }
+
   @Test
   void testIfEmpty(){
     Set<String> input = Set.of();
@@ -44,13 +45,14 @@ public class ProblemSolvingTest {
     assertTrue(actual);
   }
 
-  // TODO:
-  // Come up with more tests to thoroughly test testAllStartWithA
-  // Suggestions:
-  //  - test an empty set
-  //  - test a set where none start with A
-  //  - test a set with only a single element
-  //  - more you can think of!
+  @Test
+  void testSingleElement(){
+    Set<String> input = Set.of("oval", "obama", "aman");
+
+    boolean actual = ProblemSolving.allStartWithA(input);
+
+    assertFalse(actual);
+  }
 
   @Test
   void testHasEmptyString_falseAllNonEmpty() {
