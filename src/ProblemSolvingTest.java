@@ -126,6 +126,12 @@ public class ProblemSolvingTest {
 
     assertEquals(0, actual);
   }
+  @Test
+  void textMaxLength_singleCharacter(){
+    Set<String> input = Set.of("a");
+    int actual = ProblemSolving.maxLength(input);
+    assertEquals(1, actual);
+  }
   
   // TODO:
   // Come up with ALL tests to thoroughly test minLength
