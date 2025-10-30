@@ -74,12 +74,33 @@ public class ProblemSolvingTest {
     assertTrue(actual);
   }
 
-  
+
 
 
   // TODO:
   // Come up with more tests to thoroughly test hasEmptyString
   // Use your creativity here!
+
+  
+  @Test
+  void testIfonlyOneElementIsEmpty(){
+    // arrange
+    Set<String> input = Set.of("");
+    // act
+    boolean actual = ProblemSolving.hasEmptyString(input);
+    // assert
+    assertTrue(actual);
+
+  }
+
+  @Test
+  void testEmptySet(){
+     Set<String> input = Set.of();
+    // act
+    boolean actual = ProblemSolving.hasEmptyString(input);
+    // assert
+    assertFalse(actual);
+  }
 
 
   @Test

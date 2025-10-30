@@ -33,14 +33,13 @@ public class ProblemSolving {
   public static boolean hasEmptyString(Set<String> words) {
     if(words.isEmpty()) return false;
 
-    boolean isValid = false;
     for(String word: words){
       if(word.length() == 0){
-        isValid = true;
+        return true;
       }
     }
 
-    return isValid;
+    return false;
   }
 
   /**
