@@ -35,6 +35,14 @@ public class ProblemSolvingTest {
 
     assertFalse(actual);
   }
+  @Test
+  void testIfEmpty(){
+    Set<String> input = Set.of();
+
+    boolean actual = ProblemSolving.allStartWithA(input);
+
+    assertTrue(actual);
+  }
 
   // TODO:
   // Come up with more tests to thoroughly test testAllStartWithA
