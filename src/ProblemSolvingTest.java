@@ -27,6 +27,15 @@ public class ProblemSolvingTest {
     assertFalse(actual);
   }
 
+  @Test
+  void testNoneStartsWithA(){
+    Set<String> input = Set.of("oval", "obama", "banana");
+
+    boolean actual = ProblemSolving.allStartWithA(input);
+
+    assertFalse(actual);
+  }
+
   // TODO:
   // Come up with more tests to thoroughly test testAllStartWithA
   // Suggestions:
