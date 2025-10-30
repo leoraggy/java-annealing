@@ -121,9 +121,7 @@ public class ProblemSolvingTest {
   @Test
   void testMaxLength_emptyString(){
     Set<String> input = Set.of();
-
     int actual = ProblemSolving.maxLength(input);
-
     assertEquals(0, actual);
   }
   @Test
@@ -149,6 +147,12 @@ public class ProblemSolvingTest {
     Set<String> input = Set.of();
     int actual = ProblemSolving.minLength(input);
     assertEquals(Integer.MAX_VALUE, actual);
+  }
+  @Test
+  void testMinLength_EmptyString(){
+    Set<String> input = Set.of("");
+    int actual = ProblemSolving.minLength(input);
+    assertEquals(0, actual);
   }
 
 }
