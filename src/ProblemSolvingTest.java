@@ -118,6 +118,14 @@ public class ProblemSolvingTest {
   // Come up with more tests to thoroughly test maxLength
   // Use your creativity here!
     
+  @Test
+  void testMaxLength_emptyString(){
+    Set<String> input = Set.of();
+
+    int actual = ProblemSolving.maxLength(input);
+
+    assertEquals(0, actual);
+  }
   
   // TODO:
   // Come up with ALL tests to thoroughly test minLength
